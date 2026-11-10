@@ -185,6 +185,70 @@ section {
     font-size: 100px;
     color: var(--main-color);
 }
+/* Education Section */
+.education-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.education-box {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    background: var(--box-bg);
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 5px 15px var(--shadow-color);
+    transition: 0.3s ease;
+}
+
+.education-box:hover {
+    transform: translateY(-5px);
+    border-color: var(--main-color);
+}
+
+.education-box i {
+    font-size: 40px;
+    color: var(--main-color);
+    margin-top: 5px;
+}
+
+.education-content h3 {
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.education-content .institution {
+    font-size: 16px;
+    color: var(--main-color);
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.education-content .duration, .education-content .result {
+    display: inline-block;
+    font-size: 14px;
+    opacity: 0.8;
+    margin-bottom: 10px;
+}
+
+.education-content p {
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* Responsive adjustment for Mobile */
+@media(max-width: 768px) {
+    .education-box {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
 
 /* Skills Section */
 .skills-container {
